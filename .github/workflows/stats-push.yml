@@ -13,6 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     container: pandoc/latex
     steps:
+      - uses: actions/checkout@v2
       - name: Pushes to another repository
         id: push_stats
         uses: le0pa/bolt-stats@main
